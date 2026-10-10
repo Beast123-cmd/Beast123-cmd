@@ -1,99 +1,90 @@
 <div align="center">
-  <img src="assets/banner.svg" alt="Aayush Angal — Software Developer, AI Engineer" width="100%" />
+  <img src="assets/banner.svg" alt="Aayush Angal — Software Developer and AI Engineer" width="100%" />
   <br/><br/>
-  <a href="https://github.com/Beast123-cmd?tab=repositories"><img src="https://img.shields.io/badge/Explore_Projects-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="Explore projects" /></a>
-  <a href="https://github.com/Beast123-cmd/Portfolio_AayushAngal"><img src="https://img.shields.io/badge/Portfolio-0891B2?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio source" /></a>
+  <a href="https://github.com/Beast123-cmd?tab=repositories"><img src="https://img.shields.io/badge/Explore_Repositories-7C3AED?style=for-the-badge&logo=github&logoColor=white" alt="Explore repositories" /></a>
+  <a href="https://github.com/Beast123-cmd/Portfolio_AayushAngal"><img src="https://img.shields.io/badge/Portfolio-0891B2?style=for-the-badge&logo=react&logoColor=white" alt="Portfolio" /></a>
   <br/><br/>
-  <strong>Backend Engineering &nbsp;·&nbsp; Intelligent Applications &nbsp;·&nbsp; Developer Tools</strong>
+  <strong>Backend Engineering &nbsp;·&nbsp; AI Systems &nbsp;·&nbsp; Full-Stack Development</strong>
 </div>
 
-## 👋 A little about me
+## 👋 About me
 
-I'm an Electronics & Telecommunication Engineering student at **PICT, Pune**, who enjoys figuring out how systems work and turning ideas into usable products. My work spans **backend APIs, databases, AI agents, retrieval systems, and full-stack applications**.
+I'm an Electronics & Telecommunication Engineering student at **PICT, Pune**, interested in building software that solves real problems—from backend APIs and databases to full-stack products and AI-assisted workflows.
 
-- 💼 **Experience:** AI/ML Engineering Intern at **Prorigo Software**, working on applied AI and software engineering problems.
-- 🎯 **What I enjoy:** Clean APIs, thoughtfully designed systems, practical AI integrations, and exploring system internals.
-- 🏐 **Beyond the IDE:** Volleyball and painting.
+- 💼 **Experience:** AI/ML Engineering Intern at **Prorigo Software**.
+- 🧩 **Interests:** Software architecture, API development, applied AI, and engineering reliable systems.
+- 🎨 **Beyond coding:** Volleyball and painting.
 
 ## 🌈 Tech stack
 
 <div align="center">
-  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,java,fastapi,react,nextjs,tailwind,postgres,supabase,docker,git,github,azure&perline=8" alt="Python, C++, JavaScript, TypeScript, Java, FastAPI, React, Next.js, Tailwind CSS, PostgreSQL, Supabase, Docker, Git, GitHub and Azure" />
+  <img src="https://skillicons.dev/icons?i=python,cpp,js,ts,java,fastapi,react,nextjs,tailwind,postgres,supabase,docker,git,github,azure&perline=8" alt="Python, C++, JavaScript, TypeScript, Java, FastAPI, React, Next.js, Tailwind, PostgreSQL, Supabase, Docker, Git, GitHub and Azure" />
 </div>
 
-**Backend & databases:** REST APIs · FastAPI · PostgreSQL · SQLite · SQL · Authentication & RBAC  
-**AI & data:** LangChain · LangGraph · LlamaIndex · RAG · Qdrant · LLM integrations  
-**Engineering:** Git · Azure DevOps · Testing · Docker · Systems programming
+**Backend:** FastAPI · REST APIs · NestJS · Authentication & RBAC · Pydantic  
+**AI:** LangChain · LangGraph · LlamaIndex · RAG · Qdrant · Local LLMs  
+**Data & tools:** PostgreSQL · Supabase · SQL · Git · Azure DevOps · Docker
 
 ## 🚀 Featured projects
 
-### 🟣 [TaskForge — C++ Task Scheduler & Process Observatory](https://github.com/Beast123-cmd/taskforge-cpp)
+### 🩷 Medico.ai — AI-Assisted Clinical Triage
 
-A **local-first C++17 tool** for executing dependency-aware workflows and understanding exactly *why* a job ran, waited, retried, or failed.
+A full-stack healthcare engineering project that brings together **patient intake, multi-turn AI-assisted triage, and doctor-facing case review** in one workflow. The goal is to help organize information for clinical review—not to replace a medical professional.
 
-- Built a **DAG-based scheduler** with cycle detection, priority queues, dependency tracking, and worker threads.
-- Captures structured execution events, job state transitions, retries, and failures for inspection.
-- Includes a terminal observability interface for workflow traces and live process metrics across operating systems.
+- Built a **Next.js patient-facing interface** with conversational symptom intake and case visibility.
+- Developed a **FastAPI AI service** that guides multi-step questioning and produces structured urgency assessments and case summaries.
+- Used a **NestJS backend** for JWT-based authentication, application APIs, and coordination with **Supabase/PostgreSQL** for persistence.
+- Integrated **local LLM inference with Ollama** to explore privacy-conscious AI processing.
 
-`C++17` `Concurrency` `Scheduling` `CLI` `Observability`
+`Next.js` `NestJS` `FastAPI` `Ollama` `PostgreSQL` `AI Triage`
 
-### 🔵 [Subscription Management — Subscription Tracking App](https://github.com/Beast123-cmd/Subscription-management)
+*Private repository · Project details available on request. Experimental software, not a clinically validated diagnostic tool.*
 
-An application focused on making **recurring subscriptions easier to organize and manage**. The project represents my interest in building practical product workflows, not just demos.
+### 💜 ResearchSync — Research Publication & Accreditation Platform
 
-- Explore the repository for the current implementation and setup details.
-- Focus areas include application architecture, user-facing workflows, and maintainable feature development.
+A full-stack institutional platform to reduce repetitive work in **research publication submission, metadata verification, approval, and accreditation reporting**.
 
-`Application Development` `Product Engineering` `Full Stack`
+- Designed a **PDF-to-structured-data workflow**, with document parsing via **Docling/PyMuPDF** and optional local AI enrichment.
+- Supports a **human-in-the-loop review process** so extracted publication metadata can be verified and corrected before final submission.
+- Uses **FastAPI, SQLAlchemy, and PostgreSQL** to support publication records, user roles, and administrative operations.
+- Includes **React-based interfaces** for faculty and administrators and **Excel reporting using OpenPyXL**.
+- Organized the system into frontend, backend, database, and extraction layers for maintainability.
 
-### 🟢 [Library Management System — Operations & Access Control](https://github.com/Beast123-cmd/Library-Management-System)
+`React` `FastAPI` `PostgreSQL` `Supabase` `Docling` `OpenPyXL`
 
-A management application for library operations, covering **catalog access, borrowing/returns, administration, and member workflows**.
+*Private repository · Project overview available on request.*
 
-- Separates administrator and member capabilities with role-based access.
-- Supports book inventory operations, availability checks, issuing, and returns.
-- Demonstrates modeling real-world rules such as lending transactions, fines, and operational reporting.
+### 💚 [Library Management System — Library Operations Platform](https://github.com/Beast123-cmd/Library-Management-System)
 
-`Backend` `Database Design` `RBAC` `Business Workflows`
+A management application that models day-to-day library operations through **inventory control, member access, book borrowing, and administrative workflows**.
 
-### 🩷 [Web Navigator AI — AI-Assisted Information Discovery](https://github.com/Beast123-cmd/Web-navigator-agent)
+- Supports **role-based access** for administrators and members.
+- Covers **catalog search, book availability, issuing and returning books**, and transaction history.
+- Models business rules such as **due dates, overdue fines, and inventory updates**.
+- Provides administrative features for book management and operational reporting.
 
-A frontend application exploring how users can **search, compare, and review information with AI-assisted workflows**.
+`Database Design` `Authentication` `RBAC` `CRUD` `Business Logic`
 
-- Provides interfaces for query entry, search results, comparison, and analytics.
-- Models agent workflow states and interactive feedback in a responsive user experience.
-- Explores how complex AI-driven behavior can be presented in an accessible product UI.
+### 💙 [Subscription Management — Recurring Subscription Organizer](https://github.com/Beast123-cmd/Subscription-management)
 
-`React` `Frontend` `AI Workflows` `UX`
+A practical application centered on **organizing and managing recurring subscriptions** through a straightforward user experience.
 
-### 🟠 [Personal Portfolio — Interactive Developer Website](https://github.com/Beast123-cmd/Portfolio_AayushAngal)
+- Focuses on making subscription information easier to **track and maintain**.
+- Explores building clear, user-oriented **application workflows** for everyday financial organization.
+- Emphasizes modular product development and a maintainable codebase.
 
-My portfolio site, built to present engineering projects and experience through a **responsive, accessible interface**.
-
-- Uses reusable components, interactive project sections, animations, and theme switching.
-- Organizes project and skills content in data-driven components for easier updates.
-
-`React` `TypeScript` `Tailwind CSS` `Framer Motion`
-
-## 🧠 Other work and experience
-
-Some of my substantial engineering experience comes from internship and private projects, so source code is not publicly linked here.
-
-- **Regulatory Document RAG:** Worked on document ingestion and retrieval workflows for regulatory PDFs, including structured extraction, semantic search, and citation-aware responses.
-- **Git Contribution Analyzer:** Worked on commit analysis and contribution reporting across branches, including deduplication, complexity-oriented reporting, and developer-facing insights.
-- **Medico.ai:** Developed an AI-assisted clinical workflow concept connecting patient intake, case triage, clinical knowledge retrieval, and doctor-facing workflows. *An engineering project, not a clinically validated diagnostic system.*
-- **ResearchSync:** Worked on a role-based academic publication review workflow, with document submissions, coordinator review, status tracking, and structured exports.
+`Full-Stack Development` `Product Workflows` `Application Architecture`
 
 ## 📊 GitHub activity
 
 <div align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Beast123-cmd&show_icons=true&theme=tokyonight&hide_border=true&rank_icon=github" alt="GitHub activity stats" height="165" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Beast123-cmd&layout=compact&theme=tokyonight&hide_border=true" alt="Most used public repository languages" height="165" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Beast123-cmd&layout=compact&theme=tokyonight&hide_border=true" alt="Most used languages in public repositories" height="165" />
 </div>
 
 ---
 
 <div align="center">
-  <strong>💜 I enjoy building software that is useful, maintainable, and technically interesting.</strong><br/>
-  <sub>Explore my repositories to see what I'm working on.</sub>
+  <strong>💜 Building useful products with thoughtful engineering.</strong><br/>
+  <sub>Explore my public repositories or connect to learn more about my work.</sub>
 </div>
