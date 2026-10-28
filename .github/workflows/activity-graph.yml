@@ -1,0 +1,101 @@
+name: Generate Profile Activity Graph
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  graph:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate graph SVG
+        env:
+          GH_USER: Beast123-cmd
+        run: |
+          python3 - <<'PY'
+          import os, re, urllib.request
+          from datetime import date, timedelta
+          from html import escape
+          from xml.etree import ElementTree as ET
+
+          user = os.environ["GH_USER"]
+          req = urllib.request.Request(
+              f"https://github.com/users/{user}/contributions",
+              headers={"User-Agent": "Mozilla/5.0", "Accept": "text/html"}
+          )
+          with urllib.request.urlopen(req, timeout=30) as response:
+              html = response.read().decode("utf-8")
+
+          counts = {}
+          for tag in re.findall(r"<(?:td|rect)\b[^>]*>", html):
+              day = re.search(r'data-date=["\'](\d{4}-\d{2}-\d{2})["\']', tag)
+              count = re.search(r'data-(?:count|level)=["\'](\d+)["\']', tag)
+              if day and count:
+                  counts[day.group(1)] = int(count.group(1))
+
+          # GitHub may render contribution counts in tooltip text.
+          if not counts:
+              root = ET.fromstring(html) if html.lstrip().startswith("<svg") else None
+              if root is not None:
+                  for el in root.iter():
+                      d = el.attrib.get("data-date")
+                      if d:
+                          counts[d] = int(el.attrib.get("data-count", "0"))
+
+          if not counts:
+              raise RuntimeError("GitHub contribution calendar could not be parsed; refusing to publish an empty graph.")
+
+          end = date.today()
+          start = end - timedelta(days=364)
+          # Weekly sums from the 365-day contribution calendar
+          weeks = []
+          for i in range(53):
+              days = [start + timedelta(days=j) for j in range(i*7, min((i+1)*7,365))]
+              weeks.append(sum(counts.get(d.isoformat(), 0) for d in days))
+
+          W, H, L, R, T, B = 1100, 310, 65, 35, 75, 45
+          pw, ph = W-L-R, H-T-B
+          maximum = max(1, max(weeks))
+          points = [(L+i*pw/(len(weeks)-1), T+ph*(1-v/maximum)) for i,v in enumerate(weeks)]
+          line = " ".join(f"{x:.1f},{y:.1f}" for x,y in points)
+          polygon = f"{L},{T+ph} " + line + f" {points[-1][0]:.1f},{T+ph}"
+          parts = [
+              f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">',
+              '<defs><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#7c3aed" stop-opacity=".04"/></linearGradient></defs>',
+              f'<rect width="{W}" height="{H}" rx="15" fill="#1a1b27"/>',
+              '<text x="35" y="42" fill="#70a5fd" font-family="Arial,sans-serif" font-weight="bold" font-size="22">GitHub Contribution Activity</text>'
+          ]
+          for j in range(5):
+              y = T + ph*j/4
+              parts.append(f'<line x1="{L}" x2="{W-R}" y1="{y:.1f}" y2="{y:.1f}" stroke="#36384f" stroke-dasharray="4 6"/>')
+          parts += [
+              f'<polygon points="{polygon}" fill="url(#shade)"/>',
+              f'<polyline points="{line}" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>'
+          ]
+          for x,y in points:
+              parts.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="#a78bfa"/>')
+          for i in (0, 13, 26, 39, 52):
+              label = (start + timedelta(days=min(i*7,364))).strftime("%b %Y")
+              x = L+i*pw/52
+              parts.append(f'<text x="{x:.1f}" y="{H-17}" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">{escape(label)}</text>')
+          parts.append("</svg>")
+          os.makedirs("dist", exist_ok=True)
+          with open("dist/activity-graph.svg", "w", encoding="utf-8") as file:
+              file.write("\n".join(parts))
+          print(f"Graph generated using {len(counts)} contribution days")
+          PY
+
+      - name: Publish to output branch
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: output
+          publish_dir: ./dist
+          enable_jekyll: false
