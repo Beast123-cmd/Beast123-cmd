@@ -217,7 +217,7 @@ Worked on enterprise AI applications and backend engineering, including **API de
 
 <br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Beast123-cmd&theme=tokyo-night&hide_border=true&area=true" alt="GitHub Contribution Activity Graph" width="98%"/>
+<img src="https://raw.githubusercontent.com/Beast123-cmd/Beast123-cmd/output/activity-graph.svg" alt="GitHub Contribution Activity Graph" width="98%"/>
 
 </div>
 
