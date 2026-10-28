@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 310" width="1100" height="310">
+<defs><linearGradient id="shade" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#7c3aed" stop-opacity=".55"/><stop offset="1" stop-color="#7c3aed" stop-opacity=".04"/></linearGradient></defs>
+<rect width="1100" height="310" rx="15" fill="#1a1b27"/>
+<text x="35" y="42" fill="#70a5fd" font-family="Arial,sans-serif" font-weight="bold" font-size="22">GitHub Contribution Activity</text>
+<line x1="65" x2="1065" y1="75.0" y2="75.0" stroke="#36384f" stroke-dasharray="4 6"/>
+<line x1="65" x2="1065" y1="122.5" y2="122.5" stroke="#36384f" stroke-dasharray="4 6"/>
+<line x1="65" x2="1065" y1="170.0" y2="170.0" stroke="#36384f" stroke-dasharray="4 6"/>
+<line x1="65" x2="1065" y1="217.5" y2="217.5" stroke="#36384f" stroke-dasharray="4 6"/>
+<line x1="65" x2="1065" y1="265.0" y2="265.0" stroke="#36384f" stroke-dasharray="4 6"/>
+<polygon points="65,265 65.0,265.0 84.2,265.0 103.5,265.0 122.7,243.9 141.9,265.0 161.2,265.0 180.4,265.0 199.6,265.0 218.8,265.0 238.1,243.9 257.3,265.0 276.5,265.0 295.8,265.0 315.0,265.0 334.2,243.9 353.5,265.0 372.7,243.9 391.9,265.0 411.2,265.0 430.4,265.0 449.6,243.9 468.8,265.0 488.1,265.0 507.3,265.0 526.5,265.0 545.8,265.0 565.0,243.9 584.2,265.0 603.5,265.0 622.7,265.0 641.9,265.0 661.2,265.0 680.4,265.0 699.6,265.0 718.8,265.0 738.1,265.0 757.3,265.0 776.5,265.0 795.8,265.0 815.0,265.0 834.2,243.9 853.5,265.0 872.7,265.0 891.9,265.0 911.2,243.9 930.4,117.2 949.6,222.8 968.8,201.7 988.1,265.0 1007.3,75.0 1026.5,265.0 1045.8,159.4 1065.0,222.8 1065.0,265" fill="url(#shade)"/>
+<polyline points="65.0,265.0 84.2,265.0 103.5,265.0 122.7,243.9 141.9,265.0 161.2,265.0 180.4,265.0 199.6,265.0 218.8,265.0 238.1,243.9 257.3,265.0 276.5,265.0 295.8,265.0 315.0,265.0 334.2,243.9 353.5,265.0 372.7,243.9 391.9,265.0 411.2,265.0 430.4,265.0 449.6,243.9 468.8,265.0 488.1,265.0 507.3,265.0 526.5,265.0 545.8,265.0 565.0,243.9 584.2,265.0 603.5,265.0 622.7,265.0 641.9,265.0 661.2,265.0 680.4,265.0 699.6,265.0 718.8,265.0 738.1,265.0 757.3,265.0 776.5,265.0 795.8,265.0 815.0,265.0 834.2,243.9 853.5,265.0 872.7,265.0 891.9,265.0 911.2,243.9 930.4,117.2 949.6,222.8 968.8,201.7 988.1,265.0 1007.3,75.0 1026.5,265.0 1045.8,159.4 1065.0,222.8" fill="none" stroke="#38bdf8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="65.0" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="84.2" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="103.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="122.7" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="141.9" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="161.2" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="180.4" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="199.6" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="218.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="238.1" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="257.3" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="276.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="295.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="315.0" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="334.2" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="353.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="372.7" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="391.9" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="411.2" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="430.4" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="449.6" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="468.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="488.1" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="507.3" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="526.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="545.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="565.0" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="584.2" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="603.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="622.7" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="641.9" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="661.2" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="680.4" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="699.6" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="718.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="738.1" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="757.3" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="776.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="795.8" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="815.0" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="834.2" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="853.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="872.7" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="891.9" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="911.2" cy="243.9" r="3" fill="#a78bfa"/>
+<circle cx="930.4" cy="117.2" r="3" fill="#a78bfa"/>
+<circle cx="949.6" cy="222.8" r="3" fill="#a78bfa"/>
+<circle cx="968.8" cy="201.7" r="3" fill="#a78bfa"/>
+<circle cx="988.1" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="1007.3" cy="75.0" r="3" fill="#a78bfa"/>
+<circle cx="1026.5" cy="265.0" r="3" fill="#a78bfa"/>
+<circle cx="1045.8" cy="159.4" r="3" fill="#a78bfa"/>
+<circle cx="1065.0" cy="222.8" r="3" fill="#a78bfa"/>
+<text x="65.0" y="293" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">Oct 2025</text>
+<text x="315.0" y="293" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">Jan 2026</text>
+<text x="565.0" y="293" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">Apr 2026</text>
+<text x="815.0" y="293" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">Jul 2026</text>
+<text x="1065.0" y="293" font-family="Arial,sans-serif" font-size="12" fill="#aab0c6">Oct 2026</text>
+</svg>
